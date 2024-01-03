@@ -1,0 +1,28 @@
+body {
+  color: #ffffff;
+  background-color: #382f85;
+  font-family: 'Trebuchet MS', verdana;
+  margin: 0;
+}
+
+.background-image {
+  background-image: url(../images/sunnyMountains.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+/*.resized-image {
+  width: 50px; 
+  height: 50px; 
+}*/
+
+img {
+  max-width: 90%;
+  max-height: 80%;
+  display: block;
+  margin: 0 auto; 
+}
