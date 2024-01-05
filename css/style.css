@@ -1,28 +1,206 @@
 body {
-  color: #ffffff;
-  background-color: #382f85;
   font-family: 'Trebuchet MS', verdana;
   margin: 0;
+  min-height: 100vh;
+  background-color: purple;
 }
 
 .background-image {
-  background-image: url(../images/sunnyMountains.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-  margin-top: 0;
-  padding-top: 20px;
+  margin: 0;
+  background: url(../images/cliffTree.jpg)  top/contain no-repeat fixed;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
 }
 
-/*.resized-image {
-  width: 50px; 
-  height: 50px; 
-}*/
+.background-image h1 {
+  text-align: center;
+  text-shadow: 0.8vw 0.19vw 1.2vw gold;
+  font-family: Quicksand;
+  font-size: 10vw;
+  transition: transform 0.2s;
+  white-space: nowrap;
+  transform-origin: center;
+  flex-shrink: 1;
+  color: purple;
+  margin-top: 18vh;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.background-image > h1:hover {
+  text-align: center;
+  text-shadow: 0.8vw 0.19vw 1.2vw purple;
+  font-family: Quicksand;
+  font-size: 10vw;
+  transition: transform 0.2s;
+  white-space: nowrap;
+  transform-origin: center;
+  flex-shrink: 1;
+  color: gold;
+  margin-top: 18vh;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.background-image h3 {
+  text-align: center;
+  text-shadow: 0.1vw 0.1vw 0.2vw silver;
+  font-family: 'Lato', sans-serif;
+  font-size: 3vw;
+  white-space: nowrap;
+  color: white;
+  margin-top: 50vh;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
 
 img {
-  max-width: 90%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   display: block;
   margin: 0 auto; 
+}
+
+#button-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  margin-top: 60vh;
+  margin-bottom: 5vh;
+}
+
+#showCarouselBtn {
+  margin: 2vh;
+  font-size: 2vw; 
+  color: yellow; 
+  background-color: purple; 
+  border-color: grey;
+  border-width: 0.2vw;
+  border-style: solid;
+  border-radius: 0.5vw 0.5vw 0.5vw 0.5vw;
+  padding: 0.4vw;
+  cursor: crosshair;
+}
+
+#showCarouselBtn:hover {
+  background-color: gold; 
+  color: purple; 
+}
+
+#showCarouselBtn:active {
+  background-color: green;
+  color: red;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#carousel-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  z-index: 3;
+  max-height: 80vh;
+}
+
+.carousel-wrapper {
+  position: relative;
+  margin-top: 10vh;
+  z-index: 2;
+  height: 60vh;
+}
+
+.carousel-slides {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+}
+
+#closeGalleryBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border-color: grey;
+  border-radius: 0 1vw 1vw 0;
+  padding: 10px;
+  cursor: crosshair;
+}
+
+#prevBtn, #nextBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 1vh;
+  margin-top: 10vh;
+  color: white;
+  border-color: grey;
+  background-color: rgba(245, 22, 22, 0.8);
+  font-weight: bold;
+  font-size: 3vw;
+  transition: 0.6s ease;
+  border-radius: 0 1vw 1vw 0;
+  user-select: none;
+  z-index: 3;
+}
+
+#nextBtn {
+  right: 0;
+  border-radius: 1vw 0 0 1vw;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+  background-color: gold;
+}
+
+#prevBtn:active, #nextBtn:active {
+  background-color: rgba(0, 100, 0, 0.8);
+}
+
+footer {
+  background-color: rgba(128, 128, 128, 0.7); 
+  color: red;
+  font-family: Arial, sans-serif;
+  font-size: 1.5vh;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+footer p:hover {
+  color: gold;
 }
