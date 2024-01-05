@@ -1,81 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julie's Art Gallery</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie's Art Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-  <div class="background-image">
-    <h1>Visions of my Soul</h1>
-    <h3>I love to draw and paint check out my Gallery</h3>
-    <div id="button-container">
-      <button id="showCarouselBtn" onclick="showCarousel()">My Gallery</button>
-    </div>
-  </div>
-  <div id="overlay" class="hidden">
-    <div id="carousel-container">
-      <div class="carousel-wrapper">
-        <div class="carousel-slides">
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images/wolves.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\15 - 1.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\26776_1189811639946_7788507_n.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\207362_1024120897781_7122112_n.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\215497_1024120857780_7602971_n.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\217257_1024120937782_5962979_n.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\10014998_10201803371120477_1695897803920315718_n.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-          <img class="carousel-image" src="images\20231224_230608.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\20231226_213110.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\20231228_000857.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\20240101_125600.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images/20240101_125642.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\moonRise.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\sunnyMountains.jpg" alt="">
-          </div>
-          <div class="carousel-slide">
-            <img class="carousel-image" src="images\cliffTree.jpg" alt="">
-          </div>
+    <div class="background-image">
+        <h1>Visions of my Soul</h1>
+        <h3>I love to draw and paint, check out my Gallery</h3>
+        <div id="button-container">
+            <button id="showCarouselBtn" onclick="toggleGallery()">My Gallery</button>
         </div>
-      </div>
-      <button id="prevBtn" onclick="prevSlide()">❮</button>
-      <button id="nextBtn" onclick="nextSlide()">❯</button>
-      <button id="closeGalleryBtn" onclick="closeGallery()">Close Gallery</button>
     </div>
-  </div>
-  <footer>
-    <p>&copy; 2024 Julie Ann Werlein. All rights reserved.<br>
-    Artwork featured on this website are the exclusive property of Julie Ann Werlein and are protected by copyright law.<br>
-    No images may be reproduced, distributed, or transmitted without the prior written permission of Julie Ann Werlein.<br>
-    Website designed by Joshua J Werlein.</p>
-  </footer>
+    <div id="overlay">
+        <div id="gallery-container"></div>
+        <button id="closeGalleryBtn" onclick="closeGallery()">Close Gallery</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Julie Ann Werlein. All rights reserved.<br>
+            Artwork featured on this website is the exclusive property of Julie Ann Werlein and is protected by
+            copyright law.<br>
+            No images may be reproduced, distributed, or transmitted without the prior written permission of Julie Ann
+            Werlein.<br>
+            Website designed by Joshua J Werlein.</p>
+    </footer>
 </body>
 </html>
+
