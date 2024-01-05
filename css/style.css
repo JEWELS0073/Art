@@ -177,15 +177,15 @@ img {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
-  width: auto;
-  padding: 1vh;
+  width: 6vw;
+  padding: 2.5vh 5vh;
   margin-top: 10vh;
   margin-left: 0;
   color: silver;
   border-color: grey;
   background-color: rgba(245, 22, 22, 0.8);
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 6vw;
   transition: 0.6s ease;
   border-radius: 0 1vw 1vw 0;
   user-select: none;
