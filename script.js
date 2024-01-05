@@ -1,7 +1,3 @@
-$(window).load(function () {
-  $('.carousel').carousel('pause');
-});
-
 let currentSlide = 0;
 
 function showSlide() {
@@ -32,14 +28,14 @@ function showCarousel() {
 function closeGallery() {
   const overlay = document.getElementById('overlay');
   overlay.classList.add('hidden');
+  currentSlide = 0; // Reset current slide when closing the gallery
+  showSlide(); // Ensure the slides are reset to the initial state
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const overlay = document.getElementById('overlay');
-  overlay.classList.add('hidden'); // Hide the overlay initially
-
   const showCarouselBtn = document.getElementById('showCarouselBtn');
   const closeGalleryBtn = document.getElementById('closeGalleryBtn');
+  const overlay = document.getElementById('overlay');
   const slides = document.querySelectorAll('.carousel-slide');
 
   function checkAllSlidesLoaded() {
@@ -71,4 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
       closeGallery();
     }
   });
+  
+  // Hide the overlay initially
+  overlay.classList.add('hidden');
 });
