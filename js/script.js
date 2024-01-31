@@ -6,6 +6,7 @@ const images = [
   'images/215497_1024120857780_7602971_n.jpg',
   'images/217257_1024120937782_5962979_n.jpg',
   'images/10014998_10201803371120477_1695897803920315718_n.jpg',
+  'images/420917495.jpg',
   'images/20231224_230608.jpg',
   'images/20231226_213110.jpg',
   'images/20231228_000857.jpg',
@@ -13,8 +14,7 @@ const images = [
   'images/20240101_125642.jpg',
   'images/moonRise.jpg',
   'images/sunnyMountains.jpg',
-  'images/cliffTree.jpg',
-  'images/420917495.jpg'
+  'images/cliffTree.jpg'
 ];
 
 let currentImages = 0;
