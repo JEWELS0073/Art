@@ -13,7 +13,8 @@ const images = [
   'images/20240101_125642.jpg',
   'images/moonRise.jpg',
   'images/sunnyMountains.jpg',
-  'images/cliffTree.jpg'
+  'images/cliffTree.jpg',
+  'images/420917495.jpg'
 ];
 
 let currentImages = 0;
