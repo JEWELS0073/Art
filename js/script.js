@@ -6,24 +6,25 @@ const images = [
   'images/215497_1024120857780_7602971_n.jpg',
   'images/217257_1024120937782_5962979_n.jpg',
   'images/10014998_10201803371120477_1695897803920315718_n.jpg',
-  'images/newArt.jpg',
   'images/JulieArt1.jpg',
   'images/JulieArt2.jpg',
   'images/julieArt3.jpg',
-  'images/27.jpg',
+  'images/cliffTree.jpg',
   'images/newArt4.jpg',
-  'images/newArt1.jpg',
+  'images/27.jpg',
   'images/julieArt7.jpg',
-  'images/20231224_230608.jpg',
-  'images/newArt3.jpg',
-  'images/julieArt6.5.jpg',
-  'images/20231226_213110.jpg',
+  'images/newArt1.jpg',
   'images/20231228_000857.jpg',
   'images/20240101_125600.jpg',
   'images/20240101_125642.jpg',
   'images/moonRise.jpg',
+  'images/20231224_230608.jpg',
+  'images/28.jpg',
   'images/sunnyMountains.jpg',
-  'images/cliffTree.jpg'
+  'images/newArt.jpg',
+  'images/newArt3.jpg',
+  'images/julieArt6.5.jpg',
+  'images/20231226_213110.jpg'
 ];
 
 let currentImages = 0;
