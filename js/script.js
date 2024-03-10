@@ -27,7 +27,9 @@ const images = [
   'images/28.jpg',
   'images/p4.jpg',
   'images/p5.jpg',
-  'images/p6.jpg'
+  'images/p6.jpg',
+  'images/29.jpg',
+  'images/30.jpg'
 ];
 
 let currentImages = 0;
